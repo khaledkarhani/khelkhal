@@ -848,27 +848,14 @@
     "price": 80,
     "image": "/images/tomford-lostcherry-perfume.webp",
     "descriptionAr": "عطر فاخر للجنسين برائحة العنبر والزهور، يتميز بتركيبته الجريئة والحلوة والجذابة.",
-    "descriptionEn": "a luxurious, unisex amber floral fragrance known for its bold, sweet, and seductive scent profile.",
+    "descriptionEn": "A luxurious, unisex amber floral fragrance known for its bold, sweet, and seductive scent profile.",
     "mainCategory": "Perfumes",
     "subCategory": "Perfume",
     "gender": "Unisex",
     "badge": null,
     "featured": false
   },
-  {
-    "id": "perfume-tomford-noir",
-    "nameAr": "توم فورد لوست تشيري",
-    "nameEn": "Tom Ford Lost Cherry",
-    "price": 80,
-    "image": "/images/tomford-lostcherry-perfume.webp",
-    "descriptionAr": "عطر فاخر للجنسين برائحة العنبر والزهور، يتميز بتركيبته الجريئة والحلوة والجذابة.",
-    "descriptionEn": "a luxurious, unisex amber floral fragrance known for its bold, sweet, and seductive scent profile.",
-    "mainCategory": "Perfumes",
-    "subCategory": "Perfume",
-    "gender": "Unisex",
-    "badge": null,
-    "featured": false
-  },
+  
   {
     "id": "perfume-tomford-noir",
     "nameAr": "توم فورد نوار إكستريم",
