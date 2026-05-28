@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Luxury in Every Detail",
+    "subtitle": "Discover our exclusive collection of elegant jewelry and accessories",
+    "cta": "Shop Now"
+  },
+  "featured": {
+    "title": "Featured Products",
+    "subtitle": "Our best picks for you"
+  },
+  "shop": {
+    "title": "Shop",
+    "search": "Search for a product...",
+    "filters": "Filters",
+    "category": "Category",
+    "subcategory": "Subcategory",
+    "gender": "Gender",
+    "priceRange": "Price Range",
+    "allCategories": "All Categories",
+    "allSubcategories": "All Subcategories",
+    "allGenders": "All",
+    "men": "Men",
+    "women": "Women",
+    "unisex": "Unisex",
+    "noProducts": "No products found",
+    "orderWhatsApp": "Order via WhatsApp",
+    "newArrival": "New Arrival",
+    "bestSeller": "Best Seller",
+    "price": "Price",
+    "min": "Min",
+    "max": "Max",
+    "clearFilters": "Clear Filters",
+    "sortBy": "Sort by",
+    "newFirst": "Newest First"
+  },
+  "product": {
+    "orderViaWhatsApp": "Order via WhatsApp",
+    "description": "Description",
+    "category": "Category",
+    "gender": "Gender",
+    "whatsappMessage": "Hi! I'm interested in"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Story",
+    "story": "KhelKhal is your ultimate destination for elegant jewelry and accessories. We believe every piece tells a story and expresses your unique personality.",
+    "story2": "We offer a diverse collection of high-quality accessories that blend tradition with modernity, suited to every taste and every occasion.",
+    "story3": "From timeless classic jewelry to bold contemporary accessories, we are here to help you find the perfect pieces that complement your beauty and highlight your elegance.",
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality",
+      "qualityDesc": "We carefully select every single piece",
+      "elegance": "Elegance",
+      "eleganceDesc": "Refined designs for every occasion",
+      "service": "Service",
+      "serviceDesc": "We care about delivering the best shopping experience"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "addressValue": "Qubayat, Kousha Street",
+    "city": "Akkar, Lebanon",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "followUs": "Follow Us",
+    "getInTouch": "Get In Touch",
+    "mapPlaceholder": "Location Map"
+  },
+  "footer": {
+    "copyright": "© 2026 KhelKhal. All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "whatsapp": {
+    "chatWithUs": "Chat with us on WhatsApp"
+  },
+  "categories": {
+    "womensAccessories": "Women's Accessories",
+    "mensAccessories": "Men's Accessories",
+    "purses": "Purses",
+    "sunglasses": "Sunglasses",
+    "makeupProducts": "Makeup Products",
+    "watches": "Watches",
+    "perfumes": "Perfumes",
+    "rings": "Rings",
+    "bracelets": "Bracelets",
+    "necklaces": "Necklaces",
+    "earrings": "Earrings",
+    "khelkhal": "Khelkhal",
+    "fullSets": "Full Sets",
+    "perfume": "Perfume",
+    "perfumeSets": "Perfume Sets"
+  }
+}
