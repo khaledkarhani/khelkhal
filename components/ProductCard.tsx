@@ -11,6 +11,7 @@ interface Product {
   nameAr: string;
   nameEn: string;
   price: number;
+  oldPrice?: number;
   image: string;
   descriptionAr: string;
   descriptionEn: string;
@@ -35,9 +36,14 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
   const whatsappMessage = encodeURIComponent(
     `${locale === 'ar' ? 'مرحباً! أنا مهتم/ة بـ' : "Hi! I'm interested in"} ${name} - $${product.price}`
   );
-  const whatsappUrl = `https://wa.me/1234567890?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/96170706918?text=${whatsappMessage}`;
 
   const badgeLabel = product.badge === 'New Arrival' ? t('newArrival') : t('bestSeller');
+
+  const hasDiscount = product.oldPrice && product.oldPrice > product.price;
+  const discountPercent = hasDiscount
+    ? Math.round(((product.oldPrice! - product.price) / product.oldPrice!) * 100)
+    : 0;
 
   return (
     <motion.div
@@ -74,6 +80,15 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
           </div>
         )}
 
+        {/* Discount Badge */}
+        {hasDiscount && (
+          <div className="absolute top-2 end-2 z-10">
+            <span className="text-xs font-bold px-2 py-1 rounded-full bg-red-600 text-white">
+              -{discountPercent}%
+            </span>
+          </div>
+        )}
+
         {/* WhatsApp hover overlay */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
           <a
@@ -98,7 +113,12 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
             {name}
           </h3>
         </Link>
-        <p className="text-gold font-semibold text-sm">${product.price}</p>
+        <div className="flex items-center gap-2">
+          <p className="text-gold font-semibold text-sm">{`$${product.price}`}</p>
+          {hasDiscount && (
+            <p className="text-white/40 text-xs line-through">{`$${product.oldPrice}`}</p>
+          )}
+        </div>
       </div>
     </motion.div>
   );
