@@ -8,6 +8,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import productsData from '@/data/products.json';
 import { routing } from '@/i18n/routing';
 
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     productsData.map((p) => ({ locale, slug: p.id }))
@@ -16,8 +17,10 @@ export function generateStaticParams() {
 
 export default async function ProductDetailPage({
   params: { locale, slug },
+  searchParams,
 }: {
   params: { locale: string; slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
   setRequestLocale(locale);
   const t = await getTranslations('product');
@@ -35,6 +38,16 @@ export default async function ProductDetailPage({
   );
   const whatsappUrl = `https://wa.me/96170706918?text=${whatsappMessage}`;
 
+  // Build the "Back to Shop" link with the original filters
+  const params = new URLSearchParams();
+  Object.entries(searchParams).forEach(([key, value]) => {
+    if (typeof value === 'string') params.set(key, value);
+  });
+  const queryString = params.toString();
+  const backToShopHref = queryString
+    ? `/${locale}/shop?${queryString}`
+    : `/${locale}/shop`;
+
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
       <Navbar />
@@ -43,7 +56,7 @@ export default async function ProductDetailPage({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back button */}
           <Link
-            href={`/${locale}/shop`}
+            href={backToShopHref}
             className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6"
           >
             <svg
@@ -57,14 +70,14 @@ export default async function ProductDetailPage({
             </svg>
             <span>{locale === 'ar' ? 'العودة إلى المتجر' : 'Back to Shop'}</span>
           </Link>
-          
+
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-white/40 mb-8">
             <Link href={`/${locale}`} className="hover:text-gold transition-colors">
               {locale === 'ar' ? 'الرئيسية' : 'Home'}
             </Link>
             <span>/</span>
-            <Link href={`/${locale}/shop`} className="hover:text-gold transition-colors">
+            <Link href={backToShopHref} className="hover:text-gold transition-colors">
               {locale === 'ar' ? 'المتجر' : 'Shop'}
             </Link>
             <span>/</span>

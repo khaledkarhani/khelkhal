@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -13,18 +14,37 @@ import productsData from '@/data/products.json';
 export default function ShopClient() {
   const t = useTranslations('shop');
   const locale = useLocale();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const allPrices = productsData.map((p) => p.price);
+  
   const globalMin = 0;
-  const globalMax = 200;
+  const globalMax = 100;
 
-  const [search, setSearch] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedSubCategory, setSelectedSubCategory] = useState('');
-  const [selectedGender, setSelectedGender] = useState('');
-  const [priceMin, setPriceMin] = useState(globalMin);
-  const [priceMax, setPriceMax] = useState(globalMax);
+  // Initialize state from URL params
+  const [search, setSearch] = useState(searchParams.get('search') || '');
+  const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || '');
+  const [selectedSubCategory, setSelectedSubCategory] = useState(searchParams.get('subcategory') || '');
+  const [selectedGender, setSelectedGender] = useState(searchParams.get('gender') || '');
+  const [priceMin, setPriceMin] = useState(Number(searchParams.get('priceMin')) || globalMin);
+  const [priceMax, setPriceMax] = useState(Number(searchParams.get('priceMax')) || globalMax);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  // Sync filters to the URL whenever they change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (search) params.set('search', search);
+    if (selectedCategory) params.set('category', selectedCategory);
+    if (selectedSubCategory) params.set('subcategory', selectedSubCategory);
+    if (selectedGender) params.set('gender', selectedGender);
+    if (priceMin !== globalMin) params.set('priceMin', String(priceMin));
+    if (priceMax !== globalMax) params.set('priceMax', String(priceMax));
+
+    const queryString = params.toString();
+    const newUrl = queryString ? `${pathname}?${queryString}` : pathname;
+    router.replace(newUrl, { scroll: false });
+  }, [search, selectedCategory, selectedSubCategory, selectedGender, priceMin, priceMax, pathname, router]);
 
   const filteredProducts = useMemo(() => {
     let results = [...productsData];
