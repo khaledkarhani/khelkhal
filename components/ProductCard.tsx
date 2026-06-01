@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -28,7 +28,7 @@ interface ProductCardProps {
   index?: number;
 }
 
-export default function ProductCard({ product, index = 0 }: ProductCardProps) {
+function ProductCardInner({ product, index = 0 }: ProductCardProps) {
   const t = useTranslations('shop');
   const locale = useLocale();
   const searchParams = useSearchParams();
@@ -132,5 +132,13 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
         </div>
       </div>
     </motion.div>
+  );
+}
+
+export default function ProductCard(props: ProductCardProps) {
+  return (
+    <Suspense fallback={<div className="bg-[#111] border border-white/5 rounded-xl aspect-[3/4]" />}>
+      <ProductCardInner {...props} />
+    </Suspense>
   );
 }
