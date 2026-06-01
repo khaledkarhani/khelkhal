@@ -414,14 +414,51 @@
     "badge": null,
     "featured": false
   },
+
+
+
+
+
+
+
+
+
   {
-    "id": "khelkhal-gold-classic",
-    "nameAr": "خلخال ذهبي كلاسيكي",
-    "nameEn": "Classic Gold Khelkhal",
-    "price": 85,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Khelkhal+Gold",
-    "descriptionAr": "خلخال ذهبي تقليدي بنقوش عربية أصيلة، يجمع بين الأصالة والجمال.",
-    "descriptionEn": "A traditional gold anklet with authentic Arabic engravings, blending heritage and beauty.",
+    "id": "khelkhal-gold1",
+    "nameAr": "خلخال زهرة ذهبي",
+    "nameEn": "Flower Gold Khelkhal",
+    "price": 10,
+    "image": "/images/khelkhal-gold1.jpeg",
+    "descriptionAr": "خلخال ذهبي بتصميم زهرة، مصنوع للجمال الهادئ.",
+    "descriptionEn": "A gold anklet with a flower design, made for calm beauty.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold2",
+    "nameAr": "خلخال نجم ذهبي",
+    "nameEn": "Star Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold2.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي ذو طبقات بتصميم النجم، مصنوع من أجل جمال هادئ.",
+    "descriptionEn": "A modern layered gold anklet with a star design, made for calm beauty.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold3",
+    "nameAr": "خلخال طبقات الذهب",
+    "nameEn": "Layered Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold3.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي ذو طبقات بتصميم فان كليف، مصنوع من أجل جمال هادئ.",
+    "descriptionEn": "A modern layered gold anklet with a van cleaf design, made for calm beauty.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Khelkhal",
     "gender": "Women",
@@ -429,11 +466,140 @@
     "featured": true
   },
   {
-    "id": "khelkhal-silver-engraved",
-    "nameAr": "خلخال فضي منقوش",
-    "nameEn": "Engraved Silver Khelkhal",
-    "price": 70,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Khelkhal+Silver",
+    "id": "khelkhal-gold4",
+    "nameAr": "زهرة الحظ خلخال الذهب",
+    "nameEn": "Luck Flower Gold Khelkhal",
+    "price": 10,
+    "oldPrice":15,
+    "image": "/images/khelkhal-gold4.jpeg",
+    "descriptionAr": "خلخال ذهبي عصري بتصميم زهرة الحظ.",
+    "descriptionEn": "A modern gold anklet with a luck flower design.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": true
+  },
+  {
+    "id": "khelkhal-gold5",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold5.jpeg",
+    "descriptionAr": "خلخال ذهبي عصري .",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold6",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold6.jpeg",
+    "descriptionAr": "خلخال ذهبي عصري .",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": true
+  },
+  {
+    "id": "khelkhal-gold7",
+    "nameAr": " خلخال طبقات الذهب",
+    "nameEn": "Layered Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold7.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي ذو طبقات.",
+    "descriptionEn": "A modern layered gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": true
+  },
+  {
+    "id": "khelkhal-gold8",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 7,
+    "oldPrice":10,
+    "image": "/images/khelkhal-gold8.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي.",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+   {
+    "id": "khelkhal-gold9",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 10,
+    "image": "/images/khelkhal-gold9.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي.",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold10",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 10,
+    "image": "/images/khelkhal-gold10.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي.",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold10",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 10,
+    "image": "/images/khelkhal-gold10.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي.",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "khelkhal-gold11",
+    "nameAr": " خلخال الذهب",
+    "nameEn": "Gold Khelkhal",
+    "price": 15,
+    "image": "/images/khelkhal-gold11.jpeg",
+    "descriptionAr": "خلخال عصري باللون الذهبي.",
+    "descriptionEn": "A modern gold anklet.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Khelkhal",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": true
+  },
+  {
+    "id": "khelkhal-silver1",
+    "nameAr": "خلخال فضي ",
+    "nameEn": "Silver Khelkhal",
+    "price": 5,
+    "oldPrice":10,
+    "image": "/images/khelkhal-silver1.jpeg",
     "descriptionAr": "خلخال فضي بنقوش دقيقة يضفي أناقة شرقية أصيلة.",
     "descriptionEn": "A finely engraved silver anklet bringing an authentic Eastern elegance.",
     "mainCategory": "Women's Accessories",
@@ -443,19 +609,29 @@
     "featured": false
   },
   {
-    "id": "khelkhal-layered",
-    "nameAr": "خلخال متعدد الطبقات",
-    "nameEn": "Layered Khelkhal",
-    "price": 95,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Khelkhal+Layered",
+    "id": "khelkhal-gold12",
+    "nameAr": "خلخال ذهبي متعدد الطبقات",
+    "nameEn": "Layered Gold Khelkhal",
+    "price": 18,
+    "image": "/images/khelkhal-gold12.jpeg",
     "descriptionAr": "خلخال عصري متعدد الطبقات يجمع بين الأصالة والحداثة.",
     "descriptionEn": "A modern layered anklet combining tradition with contemporary style.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Khelkhal",
     "gender": "Women",
-    "badge": null,
-    "featured": false
+    "badge": "Best Seller",
+    "featured": true
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "womens-set-gold-complete",
     "nameAr": "طقم ذهبي كامل",
@@ -896,6 +1072,34 @@
     "subCategory": "Perfume",
     "gender": "Women",
     "badge": "",
+    "featured": false
+  },
+  {
+    "id": "perfume-vera-wang",
+    "nameAr": " فيرا وانغ روك برينسيس",
+    "nameEn": "Vera Wang Rock Princess",
+    "price": 30,
+    "image": "/images/vera-wang-perfume.jpg",
+    "descriptionAr": "ماء تواليت من الأزهار والفواكه مصمم للنساء اللاتي يرغبن في لمسة جريئة ومتمردة على رائحة الأميرة الكلاسيكية الحلوة.",
+    "descriptionEn": "Floral-fruity Eau de Toilette designed for women who want an edgy, rebellious twist on the classic, sweet Princess scent profile.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "perfume-joop",
+    "nameAr": " جوب! أوم",
+    "nameEn": "JOOP! HOMME",
+    "price": 45,
+    "image": "/images/joop-perfume.jpeg",
+    "descriptionAr": "عطر مميز للغاية من العنبر والفوجير للرجال.",
+    "descriptionEn": "An iconic, highly distinct amber-fougère fragrance for men.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume",
+    "gender": "Men",
+    "badge": "New Arrival",
     "featured": false
   },
   {
