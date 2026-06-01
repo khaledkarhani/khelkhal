@@ -33,8 +33,14 @@ export default async function ProductDetailPage({
   const description = locale === 'ar' ? product.descriptionAr : product.descriptionEn;
   const badge = product.badge === 'New Arrival' ? ts('newArrival') : product.badge === 'Best Seller' ? ts('bestSeller') : null;
 
+  const { headers } = await import('next/headers');
+  const headersList = headers();
+  const host = headersList.get('host') || 'localhost:3000';
+  const protocol = host.includes('localhost') ? 'http' : 'https';
+  const productFullUrl = `${protocol}://${host}/${locale}/shop/${product.id}`;
+
   const whatsappMessage = encodeURIComponent(
-    `${locale === 'ar' ? 'مرحباً! أنا مهتم/ة بـ' : "Hi! I'm interested in"} ${name} - $${product.price}`
+    `${locale === 'ar' ? 'مرحباً! أنا مهتم/ة بهذا المنتج:' : "Hi! I'm interested in this product:"} ${productFullUrl}`
   );
   const whatsappUrl = `https://wa.me/96170706918?text=${whatsappMessage}`;
 

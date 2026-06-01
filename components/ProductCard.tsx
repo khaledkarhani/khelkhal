@@ -35,15 +35,21 @@ function ProductCardInner({ product, index = 0 }: ProductCardProps) {
   const [imageError, setImageError] = useState(false);
 
   const name = locale === 'ar' ? product.nameAr : product.nameEn;
-  const whatsappMessage = encodeURIComponent(
-    `${locale === 'ar' ? 'مرحباً! أنا مهتم/ة بـ' : "Hi! I'm interested in"} ${name} - $${product.price}`
-  );
-  const whatsappUrl = `https://wa.me/96170706918?text=${whatsappMessage}`;
 
   const currentParams = searchParams.toString();
   const productHref = currentParams
     ? `/${locale}/shop/${product.id}?${currentParams}`
     : `/${locale}/shop/${product.id}`;
+
+  const productFullUrl =
+    typeof window !== 'undefined'
+      ? `${window.location.origin}/${locale}/shop/${product.id}`
+      : '';
+
+  const whatsappMessage = encodeURIComponent(
+    `${locale === 'ar' ? 'مرحباً! أنا مهتم/ة بهذا المنتج:' : "Hi! I'm interested in this product:"} ${productFullUrl}`
+  );
+  const whatsappUrl = `https://wa.me/96170706918?text=${whatsappMessage}`;
 
   const badgeLabel = product.badge === 'New Arrival' ? t('newArrival') : t('bestSeller');
 
