@@ -8,7 +8,10 @@
       "Bash(echo \"PID: $!\")",
       "Bash(chromium-cli *)",
       "Bash(npx playwright *)",
-      "Bash(node -e \"require\\('playwright'\\); console.log\\('available'\\)\")"
+      "Bash(node -e \"require\\('playwright'\\); console.log\\('available'\\)\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\user\\\\OneDrive\\\\Documents\\\\KhelKhal\" -Recurse -Depth 2)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)"
     ]
   }
 }
