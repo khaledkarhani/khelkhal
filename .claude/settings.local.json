@@ -11,7 +11,25 @@
       "Bash(node -e \"require\\('playwright'\\); console.log\\('available'\\)\")",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\user\\\\OneDrive\\\\Documents\\\\KhelKhal\" -Recurse -Depth 2)",
       "Bash(Select-Object FullName, PSIsContainer)",
-      "Bash(Format-Table -AutoSize)"
+      "Bash(Format-Table -AutoSize)",
+      "Bash(npm ls *)",
+      "Bash(where.exe playwright *)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Bash(mkdir -p /tmp/pw-test)",
+      "Read(//tmp/**)",
+      "Bash(npm init *)",
+      "Read(//c/tmp/pw-test/**)",
+      "Bash(node repro.js)",
+      "Bash(node repro2.js)",
+      "Bash(node repro3.js)",
+      "Bash(node -e ' *)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"node.*next\")",
+      "Bash(rm -rf /tmp/pw-test /tmp/khelkhal-dev.log)",
+      "Bash(npx tsc *)",
+      "Bash(git diff *)",
+      "Bash(git apply *)"
     ]
   }
 }

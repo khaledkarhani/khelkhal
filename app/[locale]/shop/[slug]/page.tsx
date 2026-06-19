@@ -5,8 +5,11 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import productsData from '@/data/products.json';
+import type { Product } from '@/components/ProductCard';
+import rawProductsData from '@/data/products.json';
 import { routing } from '@/i18n/routing';
+
+const productsData = rawProductsData as Product[];
 
 
 export function generateStaticParams() {
@@ -28,6 +31,10 @@ export default async function ProductDetailPage({
 
   const product = productsData.find((p) => p.id === slug);
   if (!product) notFound();
+
+  const colorVariants = product.colorGroup
+    ? productsData.filter((p) => p.colorGroup === product.colorGroup)
+    : [];
 
   const name = locale === 'ar' ? product.nameAr : product.nameEn;
   const description = locale === 'ar' ? product.descriptionAr : product.descriptionEn;
@@ -126,6 +133,29 @@ export default async function ProductDetailPage({
                 <div className="w-12 h-px bg-gold mb-6" />
                 <p className="text-3xl font-bold text-gold">${product.price}</p>
               </div>
+
+              {colorVariants.length > 1 && (
+                <div className="flex items-center gap-2">
+                  {colorVariants.map((variant) => {
+                    const variantHref = queryString
+                      ? `/${locale}/shop/${variant.id}?${queryString}`
+                      : `/${locale}/shop/${variant.id}`;
+                    const colorLabel = locale === 'ar' ? variant.colorNameAr : variant.colorNameEn;
+                    return (
+                      <Link
+                        key={variant.id}
+                        href={variantHref}
+                        title={colorLabel}
+                        className={`relative w-10 h-10 rounded-full overflow-hidden border-2 transition-colors ${
+                          variant.id === product.id ? 'border-gold' : 'border-white/20 hover:border-white/50'
+                        }`}
+                      >
+                        <Image src={variant.image} alt={colorLabel ?? ''} fill className="object-cover" unoptimized />
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
 
               <div>
                 <h2 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-2">

@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 
-interface Product {
+export interface Product {
   id: string;
   nameAr: string;
   nameEn: string;
@@ -21,18 +21,26 @@ interface Product {
   gender: string;
   badge: string | null;
   featured: boolean;
+  colorGroup?: string;
+  colorNameAr?: string;
+  colorNameEn?: string;
 }
 
 interface ProductCardProps {
   product: Product;
+  variants?: Product[];
   index?: number;
 }
 
-function ProductCardInner({ product, index = 0 }: ProductCardProps) {
+function ProductCardInner({ product: baseProduct, variants, index = 0 }: ProductCardProps) {
   const t = useTranslations('shop');
   const locale = useLocale();
   const searchParams = useSearchParams();
   const [imageError, setImageError] = useState(false);
+  const [activeId, setActiveId] = useState(baseProduct.id);
+
+  const colorOptions = variants && variants.length > 1 ? variants : [baseProduct];
+  const product = colorOptions.find((p) => p.id === activeId) ?? baseProduct;
 
   const name = locale === 'ar' ? product.nameAr : product.nameEn;
 
@@ -136,6 +144,30 @@ function ProductCardInner({ product, index = 0 }: ProductCardProps) {
             <p className="text-white/40 text-xs line-through">{`$${product.oldPrice}`}</p>
           )}
         </div>
+
+        {colorOptions.length > 1 && (
+          <div className="flex items-center gap-1.5 mt-2">
+            {colorOptions.map((option) => {
+              const colorLabel = locale === 'ar' ? option.colorNameAr : option.colorNameEn;
+              return (
+                <button
+                  key={option.id}
+                  type="button"
+                  title={colorLabel}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveId(option.id);
+                  }}
+                  className={`relative w-6 h-6 rounded-full overflow-hidden border-2 transition-colors ${
+                    option.id === product.id ? 'border-gold' : 'border-white/20 hover:border-white/50'
+                  }`}
+                >
+                  <Image src={option.image} alt={colorLabel ?? ''} fill className="object-cover" unoptimized />
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
     </motion.div>
   );

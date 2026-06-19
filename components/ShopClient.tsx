@@ -6,10 +6,12 @@ import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import ProductCard from '@/components/ProductCard';
+import ProductCard, { type Product } from '@/components/ProductCard';
 import FilterSidebar from '@/components/FilterSidebar';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import productsData from '@/data/products.json';
+import rawProductsData from '@/data/products.json';
+
+const productsData = rawProductsData as Product[];
 
 export default function ShopClient() {
   const t = useTranslations('shop');
@@ -82,6 +84,24 @@ export default function ShopClient() {
 
     return results;
   }, [search, selectedCategory, selectedSubCategory, selectedGender, priceMin, priceMax]);
+
+  const groupedProducts = useMemo(() => {
+    const seenGroups = new Set<string>();
+    const groups: { product: (typeof productsData)[number]; variants: (typeof productsData)[number][] }[] = [];
+
+    filteredProducts.forEach((p) => {
+      if (p.colorGroup) {
+        if (seenGroups.has(p.colorGroup)) return;
+        seenGroups.add(p.colorGroup);
+        const variants = filteredProducts.filter((v) => v.colorGroup === p.colorGroup);
+        groups.push({ product: variants[0], variants });
+      } else {
+        groups.push({ product: p, variants: [p] });
+      }
+    });
+
+    return groups;
+  }, [filteredProducts]);
 
   const handleClear = () => {
     setSearch('');
@@ -173,14 +193,14 @@ export default function ShopClient() {
 
               {/* Results Count */}
               <p className="text-white/40 text-sm mb-4">
-                {filteredProducts.length} {locale === 'ar' ? 'منتج' : 'products'}
+                {groupedProducts.length} {locale === 'ar' ? 'منتج' : 'products'}
               </p>
 
               {/* Product Grid */}
-              {filteredProducts.length > 0 ? (
+              {groupedProducts.length > 0 ? (
                 <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
-                  {filteredProducts.map((product, i) => (
-                    <ProductCard key={product.id} product={product} index={i} />
+                  {groupedProducts.map(({ product, variants }, i) => (
+                    <ProductCard key={product.colorGroup ?? product.id} product={product} variants={variants} index={i} />
                   ))}
                 </div>
               ) : (
