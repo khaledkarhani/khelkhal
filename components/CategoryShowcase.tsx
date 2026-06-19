@@ -8,29 +8,46 @@ import productsData from '@/data/products.json';
 
 type Product = (typeof productsData)[number];
 
+const CATEGORY_IMAGES: Record<string, string> = {
+  // Women's Accessories
+  "Women's Accessories|Rings":     '/images/categories/womens-rings.webp',
+  "Women's Accessories|Bracelets": '/images/categories/womens-bracelets.webp',
+  "Women's Accessories|Necklaces": '/images/categories/womens-necklaces.webp',
+  "Women's Accessories|Earrings":  '/images/categories/earrings.webp',
+  "Women's Accessories|Khelkhal":  '/images/categories/khelkhal.webp',
+  "Women's Accessories|Full Sets": '/images/categories/full-sets.webp',
+
+  // Men's Accessories
+  "Men's Accessories|Rings":     '/images/categories/mens-rings.webp',
+  "Men's Accessories|Bracelets": '/images/categories/mens-bracelets.webp',
+  "Men's Accessories|Necklaces": '/images/categories/mens-necklaces.webp',
+
+  // Other categories
+  "Purses":                 '/images/categories/purses.webp',
+  "Sunglasses|Men":         '/images/categories/sunglasses-men.webp',
+  "Sunglasses|Women":       '/images/categories/sunglasses-women.webp',
+  "Watches|Men":            '/images/categories/watches-men.webp',
+  "Watches|Women":          '/images/categories/watches-women.webp',
+  "Perfumes|Perfume":       '/images/categories/perfume.webp',
+  "Perfumes|Perfume Sets":  '/images/categories/perfume-sets.webp',
+  "Makeup Products":        '/images/categories/makeup.webp',
+};
+
 function getRepresentativeImage(
   mainCategory: string,
   subCategory?: string,
   gender?: string
 ): string {
-  let product: Product | undefined;
+  // 1. Try the custom category image first
+  const key = subCategory
+    ? `${mainCategory}|${subCategory}`
+    : gender
+    ? `${mainCategory}|${gender}`
+    : mainCategory;
 
-  if (gender) {
-    product = (productsData as Product[]).find(
-      (p) => p.mainCategory === mainCategory && p.gender === gender
-    );
-  } else if (subCategory) {
-    product = (productsData as Product[]).find(
-      (p) => p.mainCategory === mainCategory && p.subCategory === subCategory
-    );
-  } else {
-    product = (productsData as Product[]).find(
-      (p) => p.mainCategory === mainCategory
-    );
-  }
+  if (CATEGORY_IMAGES[key]) return CATEGORY_IMAGES[key];
 
-  if (product?.image) return product.image;
-
+  // 2. Fallback to placeholder
   const text = encodeURIComponent(subCategory ?? gender ?? mainCategory);
   return `https://placehold.co/400x400/1a1a1a/C9A84C?text=${text}`;
 }
