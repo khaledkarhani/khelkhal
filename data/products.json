@@ -1,6 +1,19 @@
 [
 
-  
+  {
+    "id": "womens-ring-gold16",
+    "nameAr": "خاتم ملفوف ذهب ",
+    "nameEn": "Gold wrap ring ",
+    "price": 10,
+    "image": "/images/gold-ring16.jpg",
+    "descriptionAr": "خاتم ملفوف مطلي بالذهب على طراز تيفاني آند كو، مزين بكريستالات صغيرة في أحد طرفيه.",
+    "descriptionEn": "Gold-plated Tiffany & Co. style 'HardWear' wrap ring featuring small crystals on one end.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Rings",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
   {
     "id": "womens-ring-gold-clover",
     "nameAr": "خاتم فان كليف ذهبي ",
@@ -226,20 +239,6 @@
     "featured": true
   },
   {
-    "id": "womens-ring-gold16",
-    "nameAr": "خاتم ملفوف ذهب ",
-    "nameEn": "Gold wrap ring ",
-    "price": 10,
-    "image": "/images/gold-ring16.jpg",
-    "descriptionAr": "خاتم ملفوف مطلي بالذهب على طراز تيفاني آند كو، مزين بكريستالات صغيرة في أحد طرفيه.",
-    "descriptionEn": "Gold-plated Tiffany & Co. style 'HardWear' wrap ring featuring small crystals on one end.",
-    "mainCategory": "Women's Accessories",
-    "subCategory": "Rings",
-    "gender": "Women",
-    "badge": "New Arrival",
-    "featured": false
-  },
-  {
     "id": "womens-ring-gold17",
     "nameAr": "خاتم مزدوج ذهب  ",
     "nameEn": "Gold double band ring",
@@ -287,7 +286,20 @@
 
 
 
-
+  {
+    "id": "bracelet-women-gold21",
+    "nameAr": "إسوارة الكريستال المتعرجة",
+    "nameEn": "Crystal Zigzag Bangle",
+    "price": 17,
+    "image": "/images/bracelet-women-gold21.jpeg",
+    "descriptionAr": "إسوارة من الذهب البرازيلي مبهرة بتصميم متعرج مرصع بأحجار كريستالية دائرية ومستطيلة، تضيف بريقاً جريئاً للمناسبات المميزة.",
+    "descriptionEn": "A dazzling Brazilian gold bangle featuring zigzag bands of round and baguette-cut crystals, delivering a bold sparkle for statement occasions.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Bracelets",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": false
+  },
   {
     "id": "bracelet-women-gold1",
     "nameAr": "سوار سلسلة ذهبي",
@@ -562,20 +574,6 @@
     "image": "/images/bracelet-women-gold20.jpeg",
     "descriptionAr": "سوار من الستانلس ستيل راقٍ بحبيبات ثلاثية الألوان وتميمة ريشة ناعمة في المنتصف، يرمز للحرية والخفة.",
     "descriptionEn": "A graceful stainless steel bracelet with tri-color diamond-cut beads and a delicate feather centerpiece, symbolizing freedom and lightness.",
-    "mainCategory": "Women's Accessories",
-    "subCategory": "Bracelets",
-    "gender": "Women",
-    "badge": "Best Seller",
-    "featured": false
-  },
-  {
-    "id": "bracelet-women-gold21",
-    "nameAr": "إسوارة الكريستال المتعرجة",
-    "nameEn": "Crystal Zigzag Bangle",
-    "price": 17,
-    "image": "/images/bracelet-women-gold21.jpeg",
-    "descriptionAr": "إسوارة من الذهب البرازيلي مبهرة بتصميم متعرج مرصع بأحجار كريستالية دائرية ومستطيلة، تضيف بريقاً جريئاً للمناسبات المميزة.",
-    "descriptionEn": "A dazzling Brazilian gold bangle featuring zigzag bands of round and baguette-cut crystals, delivering a bold sparkle for statement occasions.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Bracelets",
     "gender": "Women",
