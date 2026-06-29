@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import ProductGallery from '@/components/ProductGallery';
 import type { Product } from '@/components/ProductCard';
 import rawProductsData from '@/data/products.json';
 import { routing } from '@/i18n/routing';
@@ -98,20 +99,13 @@ export default async function ProductDetailPage({
           </nav>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-            {/* Image */}
+            {/* Image Gallery */}
             <div className="relative">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-[#111] border border-white/5">
-                <Image
-                  src={product.image}
-                  alt={name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized
-                  priority
-                />
-                {badge && (
-                  <div className="absolute top-4 start-4">
+              <ProductGallery
+                images={product.images && product.images.length > 0 ? product.images : [product.image]}
+                alt={name}
+                badge={
+                  badge ? (
                     <span
                       className={`text-sm font-medium px-3 py-1.5 rounded-full ${
                         product.badge === 'New Arrival' ? 'bg-gold text-black' : 'bg-white text-black'
@@ -119,9 +113,9 @@ export default async function ProductDetailPage({
                     >
                       {badge}
                     </span>
-                  </div>
-                )}
-              </div>
+                  ) : null
+                }
+              />
             </div>
 
             {/* Details */}

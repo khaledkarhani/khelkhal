@@ -664,6 +664,48 @@
     "badge": null,
     "featured": false
   },
+  {
+    "id": "bracelet-women-gold28",
+    "nameAr": "إسوارة الموج المنصهر",
+    "nameEn": "Molten Wave Cuff",
+    "price": 10,
+    "image": "/images/bracelet-women-gold28.jpeg",
+    "descriptionAr": "إسوارة جريئة من الذهب البرازيلي بحلقة عريضة لامعة وملمس يشبه الأمواج المنصهرة، تضفي إطلالة عصرية مميزة على المعصم.",
+    "descriptionEn": "A bold Brazilian gold cuff bracelet with a wide polished band featuring a molten wave-like texture, delivering a striking modern statement on the wrist.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Bracelets",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "bracelet-women-gold29",
+    "nameAr": "إسوارة البريق المطروق",
+    "nameEn": "Hammered Glow Cuff",
+    "price": 12,
+    "image": "/images/bracelet-women-gold29.jpeg",
+    "descriptionAr": "إسوارة لافتة من الذهب البرازيلي بحلقة عريضة بلمسة مطروقة، تمنح إطلالة فاخرة وحرفية تعكس الضوء بجمال.",
+    "descriptionEn": "A statement Brazilian gold cuff bracelet with a wide hammered finish, offering a luxurious artisanal look that catches the light beautifully.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Bracelets",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "bracelet-women-gold30",
+    "nameAr": "سوار التنس البرسيم المرصع",
+    "nameEn": "Crystal Clover Tennis Bracelet",
+    "price": 8,
+    "image": "/images/bracelet-women-gold30.jpeg",
+    "descriptionAr": "سوار تنس أنيق من الستانلس ستيل بسلسلة متواصلة من تمائم البرسيم الرباعي المرصعة بالكريستال واللامعة بالتناوب، يضفي بريقاً راقياً لكل يوم.",
+    "descriptionEn": "An elegant stainless steel tennis bracelet featuring a continuous line of alternating crystal-set and polished four-leaf clovers, offering refined everyday sparkle.",
+    "mainCategory": "Women's Accessories",
+    "subCategory": "Bracelets",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
 
 
 
@@ -682,13 +724,13 @@
 
 
   {
-    "id": "womens-necklace-layered",
-    "nameAr": "قلادة طبقات ذهبية",
-    "nameEn": "Layered Gold Necklace",
-    "price": 65,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Layered+Necklace",
-    "descriptionAr": "قلادة ذهبية متعددة الطبقات تضفي طابعاً عصرياً وأنيقاً على إطلالتك.",
-    "descriptionEn": "A multi-layered gold necklace that adds a modern and elegant touch to your look.",
+    "id": "necklace-women-gold1",
+    "nameAr": "عقد السلاسل الثلاثية المتدرجة",
+    "nameEn": "Triple Layer Chain Necklace",
+    "price": 30,
+    "image": "/images/necklace-women-gold1.jpeg",
+    "descriptionAr": "عقد جريء من الذهب البرازيلي ثلاثي الطبقات يجمع بين سلاسل بتصاميم متنوعة وتميمة بيضاوية منقوشة، يضفي إطلالة عصرية ومميزة بلا تكلف.",
+    "descriptionEn": "A bold Brazilian gold triple-layered necklace combining mixed chain styles with a textured oval pendant, delivering an effortlessly chic and modern statement look.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Necklaces",
     "gender": "Women",
@@ -696,33 +738,47 @@
     "featured": true
   },
   {
-    "id": "womens-necklace-pendant",
-    "nameAr": "قلادة بيندانت قلب",
-    "nameEn": "Heart Pendant Necklace",
-    "price": 48,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Heart+Necklace",
-    "descriptionAr": "قلادة رقيقة مع قلادة قلب، هدية مثالية للأحبة.",
-    "descriptionEn": "A delicate necklace with a heart pendant, the perfect gift for loved ones.",
+    "id": "necklace-women-gold2",
+    "nameAr": " طقم الكوكر والعقد بالحبيبات الثلاثية الألوان",
+    "nameEn": "Tri-Tone Beaded Choker & Necklace Set",
+    "price": 15,
+    "image": "/images/necklace-women-gold2.jpeg",
+    "descriptionAr": "طقم أنيق يتضمن كوكر وعقداً بحبيبات ثلاثية الألوان منقوشة بقطع الألماس، يضفي بريقاً راقياً يناسب الإطلالات اليومية والرسمية.",
+    "descriptionEn": "An elegant set including a tri-color diamond-cut beaded choker and matching necklace, offering a refined sparkle that suits both casual and formal looks.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Necklaces",
     "gender": "Women",
     "badge": "New Arrival",
-    "featured": false
+    "featured": true
   },
   {
-    "id": "womens-necklace-choker",
-    "nameAr": "قلادة تشوكر أنيقة",
-    "nameEn": "Elegant Choker Necklace",
-    "price": 32,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Choker",
-    "descriptionAr": "قلادة تشوكر عصرية تناسب الإطلالات الجريئة والمميزة.",
-    "descriptionEn": "A modern choker necklace perfect for bold and distinctive looks.",
+    "id": "necklace-women-gold3",
+    "nameAr": " عقد العملة الملكية",
+    "nameEn": "Royal Coin Necklace",
+    "price": 20,
+    "image": "/images/necklace-women-gold3.jpeg",
+    "descriptionAr": "عقد فاخر من الذهب البرازيلي بسلسلة مشبك الورق مزينة بميداليتي عملة محاطتين بالكريستال، يجمع بين الأناقة الكلاسيكية والأسلوب العصري.",
+    "descriptionEn": "A luxurious Brazilian gold necklace featuring a paperclip chain adorned with two crystal-framed coin medallions, blending vintage elegance with modern style.",
     "mainCategory": "Women's Accessories",
     "subCategory": "Necklaces",
     "gender": "Women",
-    "badge": null,
-    "featured": false
+    "badge": "Best Seller",
+    "featured": true
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "id": "womens-earrings-hoop",
     "nameAr": "أقراط حلقات ذهبية",
@@ -1403,14 +1459,28 @@
     "badge": null,
     "featured": false
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
-    "id": "purse-mini-crossbody",
-    "nameAr": "حقيبة كروس بودي صغيرة",
-    "nameEn": "Mini Crossbody Purse",
-    "price": 45,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Mini+Purse",
-    "descriptionAr": "حقيبة كروس بودي صغيرة أنيقة، مثالية للخروجات اليومية.",
-    "descriptionEn": "An elegant mini crossbody purse, perfect for daily outings.",
+    "id": "purse1",
+    "nameAr": "حقيبة الكروس الزرقاء الملكية",
+    "nameEn": "Royal Blue Quilted Crossbody",
+    "price": 20,
+    "image": "/images/purse1.jpeg",
+    "descriptionAr": "حقيبة كروس جريئة باللون الأزرق الملكي بتصميم مبطن بنقشة الشيفرون وقفل ذهبي بمفتاح دوار وسلسلة مضفرة، تضفي لمسة أنيقة لإطلالتك اليومية.",
+    "descriptionEn": "A bold royal blue quilted crossbody bag with a chevron-stitched design, gold turn-lock closure, and a woven chain strap for a chic everyday statement.",
     "mainCategory": "Purses",
     "subCategory": null,
     "gender": "Women",
@@ -1418,13 +1488,27 @@
     "featured": true
   },
   {
-    "id": "purse-clutch-evening",
-    "nameAr": "حقيبة كلاتش سهرة",
-    "nameEn": "Evening Clutch Purse",
-    "price": 65,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Evening+Clutch",
-    "descriptionAr": "حقيبة كلاتش مزينة للسهرات والمناسبات الرسمية.",
-    "descriptionEn": "A decorated clutch for evening events and formal occasions.",
+    "id": "purse2",
+    "nameAr": "حقيبة الكروس البرتقالية",
+    "nameEn": "Tangerine Chevron Crossbody",
+    "price": 18,
+    "image": "/images/purse2.jpeg",
+    "descriptionAr": "حقيبة كروس مبهجة باللون البرتقالي بتصميم شيفرون مبطن وغطاء على شكل ظرف وسلسلة ذهبية مضفرة، مثالية لإضافة لمسة لونية لإطلالتك.",
+    "descriptionEn": "A vibrant orange chevron-quilted crossbody bag featuring a sleek envelope flap and a woven gold chain strap, perfect for adding a pop of color to any outfit.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "purse3",
+    "nameAr": "حقيبة الكروس الزرقاء السماوية الهندسية",
+    "nameEn": "Sky Blue Geometric Crossbody",
+    "price": 25,
+    "image": "/images/purse3.jpeg",
+    "descriptionAr": "حقيبة كروس بلون أزرق سماوي ناعم بتصميم هندسي مبطن ثلاثي الأبعاد وسلسلة ذهبية عريضة، تمنح إطلالة عصرية وأنثوية.",
+    "descriptionEn": "A pastel sky-blue crossbody bag with a striking 3D geometric quilted design and a chunky gold chain strap for a modern feminine look.",
     "mainCategory": "Purses",
     "subCategory": null,
     "gender": "Women",
@@ -1432,19 +1516,109 @@
     "featured": false
   },
   {
-    "id": "purse-tote-large",
-    "nameAr": "حقيبة توت كبيرة",
-    "nameEn": "Large Tote Bag",
-    "price": 85,
-    "image": "https://placehold.co/400x400/1a1a1a/C9A84C?text=Tote+Bag",
-    "descriptionAr": "حقيبة توت كبيرة عملية وأنيقة لكل يوم.",
-    "descriptionEn": "A practical and elegant large tote bag for everyday use.",
+    "id": "purse4",
+    "nameAr": "حقيبة الكروس الكراميل الهندسية",
+    "nameEn": "Caramel Geometric Crossbody",
+    "price": 25,
+    "image": "/images/purse4.jpeg",
+    "descriptionAr": "حقيبة كروس بلون الكراميل البني الدافئ بتصميم ماسي مبطن ثلاثي الأبعاد ومقبض ذهبي عريض، تمنح أناقة راقية لكل يوم.",
+    "descriptionEn": "A warm caramel-brown crossbody bag featuring a bold 3D diamond-quilted design and a chunky gold chain handle for refined everyday elegance.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "purse5",
+    "nameAr": "حقيبة الكروس الكونياك بالشرابة",
+    "nameEn": "Cognac Tassel Chevron Crossbody",
+    "price": 20,
+    "image": "/images/purse5.jpeg",
+    "descriptionAr": "حقيبة كروس بلون الكونياك البني الفاخر بتصميم شيفرون مبطن وشعارالذهبي وشرابة معلقة وسلسلة مضفرة، تضفي إطلالة راقية ومميزة.",
+    "descriptionEn": "A rich cognac-brown chevron-quilted crossbody bag with a signature gold emblem, hanging tassel charm, and woven chain strap for a sophisticated look.",
     "mainCategory": "Purses",
     "subCategory": null,
     "gender": "Women",
     "badge": null,
     "featured": false
   },
+  {
+    "id": "purse6",
+    "nameAr": "حقيبة الفانيتي السوداء المبطنة",
+    "nameEn": "Noir Quilted Vanity Bag",
+    "price": 10,
+    "image": "/images/purse6.jpeg",
+    "descriptionAr": "حقيبة فانيتي سوداء أنيقة بتصميم مبطن ومقبض علوي وسحاب ذهبي وسلسلة مضفرة، تجمع بين الأناقة الكلاسيكية والاستخدام اليومي.",
+    "descriptionEn": "A chic black quilted vanity-style handbag with a top handle, gold zipper, and woven chain strap, blending classic elegance with everyday functionality.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "purse7",
+    "nameAr": "حقيبة الفانيتي الوردية الناعمة",
+    "nameEn": "Blush Quilted Vanity Bag",
+    "price": 10,
+    "image": "/images/purse7.jpeg",
+    "descriptionAr": "حقيبة فانيتي ناعمة باللون الوردي بتصميم مبطن ومقبض علوي وسحاب ذهبي وسلسلة مضفرة، تضفي لمسة أنثوية رقيقة.",
+    "descriptionEn": "A cute blush-pink quilted vanity-style handbag with a top handle, gold zipper, and woven chain strap for a soft and feminine touch.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "purse8",
+    "nameAr": "حقيبة الفوشيا المبطنة",
+    "nameEn": "Fuchsia Diamond Quilted Bag",
+    "price": 15,
+    "image": "/images/purse8.jpeg",
+    "descriptionAr": "حقيبة كتف جريئة باللون الفوشيا بتصميم ماسي مبطن ولمسة ذهبية أنيقة وسلسلة مضفرة، مثالية لإطلالة مفعمة بالحيوية.",
+    "descriptionEn": "A bold fuchsia pink diamond-quilted shoulder bag with a sleek gold bar accent and woven chain strap, perfect for making a vibrant statement.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "purse9",
+    "nameAr": "حقيبة الكتف الصفراء المشمسة",
+    "nameEn": "Sunshine Chevron Shoulder Bag",
+    "price": 15,
+    "image": "/images/purse9.jpeg",
+    "descriptionAr": "حقيبة كتف مفعمة بالحيوية باللون الأصفر بتصميم شيفرون مبطن وقفل ذهبي مزدوج وسلسلة، مثالية لإضافة الدفء والإشراق على إطلالتك.",
+    "descriptionEn": "A cheerful yellow chevron-quilted shoulder bag with a gold double-bar clasp and chain strap, ideal for adding warmth and brightness to any outfit.",
+    "mainCategory": "Purses",
+    "subCategory": null,
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "id": "sunglasses-oversized-women",
     "nameAr": "نظارة شمسية أوفرسايز نسائية",
@@ -1626,6 +1800,77 @@
     "featured": false
   },
   {
+    "id": "watch-men-classic6",
+    "nameAr": "ساعة جنيف الكرونوغراف السوداء",
+    "nameEn": "Geneva Noir Chronograph Watch",
+    "price": 15,
+    "image": "/images/watches-men-classic6.jpeg",
+    "descriptionAr": "ساعة رجالية كرونوغراف بلون فضي بميناء أسود أنيق بأرقام رومانية، تمنح إطلالة عملية راقية ومميزة.",
+    "descriptionEn": "A bold men's silver-tone chronograph watch with a sleek black Roman-numeral dial, delivering a sharp and sophisticated business look.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Men",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "watch-men-classic7",
+    "nameAr": "ساعة الكرونوغراف الزرقاء",
+    "nameEn": "Azure Chronograph Watch",
+    "price": 15,
+    "oldPrice": 20,
+    "image": "/images/watches-men-classic7.jpeg",
+    "descriptionAr": "ساعة رجالية كرونوغراف عصرية بلون فضي وميناء أزرق لافت بأرقام رومانية، تجمع بين الطابع الرياضي والأناقة الكلاسيكية.",
+    "descriptionEn": "A modern men's stainless-tone chronograph watch with a striking blue dial and Roman numerals, blending sporty character with classic elegance.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Men",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "watch-men-classic8",
+    "nameAr": "ساعة منتصف الليل الرياضية الجلدية",
+    "nameEn": "Midnight Leather Sports Watch",
+    "price": 20,
+    "image": "/images/watches-men-classic8.jpeg",
+    "descriptionAr": "ساعة رجالية كرونوغراف جريئة بلون أسود ولمسات ذهبية وردية على الميناء وسوار جلدي أسود مخيط، تضفي طابعاً جريئاً ومغامراً.",
+    "descriptionEn": "A rugged men's black chronograph watch with rose-gold dial accents and a stitched black leather strap, offering a bold and adventurous style.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Men",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "watch-men-classic9",
+    "nameAr": "ساعة بابلو راتز الكلاسيكية",
+    "nameEn": "Pablo Ratz Heritage Watch",
+    "price": 20,
+    "image": "/images/watches-men-classic9.jpeg",
+    "descriptionAr": "ساعة رجالية كلاسيكية راقية بإطار فضي وميناء أبيض بنقشة إشعاعية وعلامات زمنية مزدوجة، مع سوار جلدي بني فاخر يضفي أناقة خالدة.",
+    "descriptionEn": "A refined men's classic watch featuring a silver-tone case, white starburst dial with dual time markings, and a rich brown leather strap for timeless sophistication.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Men",
+    "badge": "New Arrival",
+    "featured": false
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
     "id": "watch-women-gold1",
     "nameAr": "ساعة ذهبية نسائية",
     "nameEn": "Women's Gold Watch",
@@ -1655,6 +1900,55 @@
     "badge": "New Arrival",
     "featured": false
   },
+  {
+    "id": "watch-women-gold3",
+    "nameAr": "ساعة الكلاسيك الذهبية المرنة",
+    "nameEn": "Golden Stretch Classic Watch",
+    "price": 10,
+    "image": "/images/watches-women-gold3.jpeg",
+    "descriptionAr": "ساعة كوارتز نسائية أنيقة بلون ذهبي مع سوار مرن مريح وميناء أبيض كلاسيكي، مثالية للإطلالات اليومية الخالدة.",
+    "descriptionEn": "An elegant women's gold-tone quartz watch with a comfortable stretch band and a clean white dial, perfect for timeless everyday wear.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Unisex",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "watch-women-silver1",
+    "nameAr": " ساعة الكلاسيك الثنائية اللون المرنة",
+    "nameEn": "Two-Tone Stretch Classic Watch",
+    "price": 10,
+    "image": "/images/watches-women-silver1.jpeg",
+    "descriptionAr": "ساعة كوارتز نسائية راقية ثنائية اللون تجمع بين الفضي والذهبي مع سوار مرن، تضفي أناقة متعددة الاستخدامات لكل المناسبات.",
+    "descriptionEn": "A refined women's two-tone quartz watch combining silver and gold accents with a stretchable band, offering versatile elegance for any occasion.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Unisex",
+    "badge": "New Arrival",
+    "featured": false
+  },
+  {
+    "id": "watch-women-silver2",
+    "nameAr": " ساعة الكلاسيك الفضية المرنة",
+    "nameEn": "Silver Stretch Classic Watch",
+    "price": 10,
+    "image": "/images/watches-women-silver2.jpeg",
+    "descriptionAr": " ساعة كوارتز نسائية بسيطة بلون فضي مع سوار مرن مريح وميناء أبيض واضح، مثالية لإطلالة يومية كلاسيكية وأنيقة.",
+    "descriptionEn": "A minimalist women's silver-tone quartz watch with a comfortable stretch band and a clear white dial, ideal for a clean and classic everyday look.",
+    "mainCategory": "Watches",
+    "subCategory": null,
+    "gender": "Unisex",
+    "badge": "New Arrival",
+    "featured": false
+  },
+
+
+
+
+
+
+
 
 
 
@@ -1971,6 +2265,69 @@
     "descriptionEn": "A bold, fruity-gourmand variation of the iconic YSL Black Opium line.",
     "mainCategory": "Perfumes",
     "subCategory": "Perfume",
+    "gender": "Women",
+    "badge": "New Arrival",
+    "featured": false
+  },
+
+
+
+
+
+
+
+  {
+    "id": "perfume-set1",
+    "nameAr": "طقم إيلي صعب لو بارفان",
+    "nameEn": "Elie Saab Le Parfum Gift Set",
+    "price": 25,
+    "image": "/images/perfume-set1.jpeg",
+    "descriptionAr": "طقم عطري أنيق يتضمن ماء عطر وبخاخ معطر للجسم ولوشن معطر، يقدم تجربة عطرية متكاملة برائحة زهرية ناعمة.",
+    "descriptionEn": "An elegant fragrance gift set including an eau de parfum, body mist spray, and body mist lotion, offering a complete layering experience of a soft floral scent.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume Sets",
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "perfume-set2",
+    "nameAr": "طقم بير فانيلا الثنائي",
+    "nameEn": "Bare Vanilla Duo Gift Set",
+    "price": 15,
+    "image": "/images/perfume-set2.jpeg",
+    "descriptionAr": " طقم هدية من قطعتين برائحة الفانيلا الدافئة يتضمن بخاخ معطر ولوشن معطر مطابق، مثالي لرائحة ناعمة وحلوة لكل يوم.",
+    "descriptionEn": "A cozy two-piece gift set featuring a warm vanilla fragrance mist and matching fragrance lotion, perfect for a soft and sweet everyday scent.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume Sets",
+    "gender": "Women",
+    "badge": null,
+    "featured": false
+  },
+  {
+    "id": "perfume-set3",
+    "nameAr": "طقم أولومابيا العطري الخماسي",
+    "nameEn": "Olumapea 5-Piece Fragrance Set",
+    "price": 30,
+    "image": "/images/perfume-set3-3.jpg",
+    "descriptionAr": " طقم عطري فاخر من خمس قطع يتضمن ماء عطر وبخاخ سفر وبخاخ معطر للجسم وجل استحمام ولوشن للجسم، لروتين عطري متكامل.",
+    "descriptionEn": "A luxurious five-piece fragrance set including eau de parfum, travel spray, body mist, shower gel, and body lotion for a complete scented routine.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume Sets",
+    "gender": "Women",
+    "badge": "Best Seller",
+    "featured": false
+  },
+  {
+    "id": "perfume-set4",
+    "nameAr": " طقم جيو الرجالي العطري الخماسي",
+    "nameEn": "GIO Men's 5-Piece Fragrance Set",
+    "price": 30,
+    "image": "/images/perfume-set4.jpeg",
+    "descriptionAr": "طقم عناية رجالي متكامل يتضمن ماء عطر وبخاخ سفر وبخاخ معطر وجل استحمام وبلسم ما بعد الحلاقة، لتجربة عطرية منعشة ورجولية.",
+    "descriptionEn": "A complete men's grooming set including eau de parfum, travel spray, body mist, shower gel, and aftershave balm for a fresh and masculine scent experience.",
+    "mainCategory": "Perfumes",
+    "subCategory": "Perfume Sets",
     "gender": "Women",
     "badge": "New Arrival",
     "featured": false
