@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Logo */}
           <Link href={`/${locale}`}>
             <Image
-              src="/images/KhelKhal_Logo.jpeg"
+              src="/images/KhelKhal_Logo.webp"
               alt="KhelKhal Logo"
               width={140}
               height={56}
